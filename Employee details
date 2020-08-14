@@ -1,0 +1,56 @@
+package sathvik;
+import java.util.Scanner;
+public class Employ {
+	public static void info(){
+	   Scanner s = new Scanner(System.in);
+	   int n;
+	   System.out.println("enter no.of employee");
+	   n=s.nextInt();
+	   String[] name = new String[n];
+	   int [] year = new int[n];
+	   String [] address= new String[n];
+	   for(int i=0;i<n;i++){
+		   System.out.println("Enter the name : ");
+           name[i]=s.next();
+           System.out.println("Enter the year : ");
+           year[i]=s.nextInt();
+           System.out.println("Enter the address : ");
+           address[i]=s.next();
+         }
+	   System.out.println("Name\t\t\t\tYear\t\t\t\tAddress");
+	   for(int i =0;i<n;i++){
+		   System.out.println(name[i]+"\t\t\t\t"+year[i]+"\t\t\t\t"+address[i]);
+		   }
+	}
+	public static void main(String [] arg){
+		info();
+	}
+}
+
+
+OUTPUT:
+enter no.of employee
+3
+Enter the name : 
+Robert
+Enter the year : 
+1994
+Enter the address : 
+64C
+Enter the name : 
+Sam
+Enter the year : 
+2000
+Enter the address : 
+68D
+Enter the name : 
+John
+Enter the year : 
+1994
+Enter the address : 
+26B
+Name				Year				Address
+Robert				1994				64C
+Sam				2000				68D
+John				1994				26B
+
